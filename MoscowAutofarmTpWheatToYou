@@ -1,0 +1,10 @@
+plr = game.Players.LocalPlayer
+hum = plr.Character.HumanoidRootPart
+while task.wait() do
+for i,v in pairs (workspace.Wheat:GetChildren()) do
+if v:IsA("Part") then
+v.CFrame = CFrame.new(hum.Position)
+wait(.5)
+end
+end
+end
